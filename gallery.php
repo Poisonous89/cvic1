@@ -1,6 +1,6 @@
 <?php
 $actualPage = basename($_SERVER['REQUEST_URI']);
-
+$actualPage = str_replace(".php", "", $actualPage);
 include ("includes/header.php")?>
 <main>
     <h1>Gallery</h1>
